@@ -9,4 +9,4 @@ spring:
         - Path=/payments/**
       - id: hr-worker        uri: lb://hr-worker/workers
         predicates:
-        - Path=/workers/**
+        - Path=/workers/**  application:    name: gateway-service
