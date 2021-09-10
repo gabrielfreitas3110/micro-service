@@ -1,0 +1,12 @@
+server:  port: 8080
+
+spring:
+  cloud:
+    gateway:
+      routes:
+      - id: hr-payroll        uri: lb://hr-payroll/payments
+        predicates:
+        - Path=/payments/**
+      - id: hr-worker        uri: lb://hr-worker/workers
+        predicates:
+        - Path=/workers/**
