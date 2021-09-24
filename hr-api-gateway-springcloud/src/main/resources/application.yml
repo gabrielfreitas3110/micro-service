@@ -3,7 +3,7 @@ server:  port: 8080
 spring:
   cloud:
     gateway:
-      routes:      - id: hr-user        uri: lb://hr-user/        predicates:        - Path=/users/**
+      routes:      - id: hr-oauth        uri: lb://hr-oauth/        predicates:        - Path=/oauthusers/**      - id: hr-user        uri: lb://hr-user/        predicates:        - Path=/users/**
       - id: hr-payroll        uri: lb://hr-payroll/
         predicates:
         - Path=/payments/**
