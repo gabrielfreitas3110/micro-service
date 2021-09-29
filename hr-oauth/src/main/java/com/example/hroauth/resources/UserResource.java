@@ -12,7 +12,7 @@ import com.example.hroauth.entities.User;
 import com.example.hroauth.services.UserService;
 
 @RestController
-@RequestMapping(value = "/oauthusers")
+@RequestMapping(value = "/users")
 public class UserResource {
 
 	@Autowired
